@@ -12,6 +12,32 @@ This project was designed from the perspective of a real airline ramp agent to r
 
 ---
 
+## 📸 Live Application Screens
+
+### 🖥️ Operations Dashboard
+
+Real-time view of all baggage, flight assignments, and operational status.
+
+![Dashboard](assets/dashboard.png)
+
+---
+
+### ➕ Add Bag Workflow
+
+Agents register baggage by tag number, passenger, flight, gate, belt, and destination before loading.
+
+![Add Bag](assets/add-bag.png)
+
+---
+
+### 🔄 Status Update Flow
+
+As bags move through the airport, agents update status from **Checked In → Loaded → Delivered**.
+
+![Status Update](assets/status-update.png)
+
+---
+
 ## 🚀 What This App Does
 
 The Baggage Tracker allows operations teams to:
