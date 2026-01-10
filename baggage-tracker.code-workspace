@@ -1,0 +1,41 @@
+{
+  "folders": [
+    {
+      "name": "baggage-tracker",
+      "path": "."
+    },
+    {
+      "name": "backend",
+      "path": "backend"
+    },
+    {
+      "name": "frontend",
+      "path": "frontend"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact"
+    ],
+
+    "eslint.alwaysShowStatus": true,
+
+    "eslint.workingDirectories": [
+      { "directory": "backend", "changeProcessCWD": true },
+      { "directory": "frontend", "changeProcessCWD": true }
+    ],
+
+    "files.exclude": {
+      "**/node_modules": true
+    }
+  }
+}

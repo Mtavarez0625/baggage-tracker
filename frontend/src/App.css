@@ -1,0 +1,230 @@
+:root {
+  --bg: #0b1220;
+  --card: #111a2e;
+  --card2: #0f1730;
+  --text: #e8edf7;
+  --muted: #a9b4cc;
+  --border: rgba(255, 255, 255, 0.12);
+
+  --primary: #2b6dff;
+  --primary2: #1f55cc;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 20% 0%, #16244a 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 980px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.card {
+  background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.statCard {
+  padding: 12px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.statLabel {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.statValue {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 10px;
+  border-radius: 10px;
+  outline: none;
+  min-width: 180px;
+}
+
+.input::placeholder {
+  color: rgba(232, 237, 247, 0.55);
+}
+
+.button {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary2) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  filter: brightness(1.06);
+}
+
+.buttonDanger {
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.55);
+  color: #ffd1d1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+}
+
+.badgeChecked {
+  background: rgba(43, 109, 255, 0.14);
+  color: #cfe0ff;
+}
+.badgeLoaded {
+  background: rgba(255, 200, 0, 0.16);
+  color: #ffe7a3;
+}
+.badgeTransit {
+  background: rgba(145, 107, 255, 0.16);
+  color: #e2d7ff;
+}
+.badgeDelivered {
+  background: rgba(0, 225, 150, 0.16);
+  color: #b8ffe6;
+}
+
+.select {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.alert {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #ffd1d1;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+/* Actions column alignment */
+th.actionsCol,
+td.actionsCol {
+  width: 140px;
+  min-width: 140px;
+  max-width: 140px;
+  text-align: right;
+  padding-right: 18px;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Enterprise action buttons */
+.actionBtn {
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: rgba(226, 232, 240, 0.95);
+
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
+}
+
+.actionBtn:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(148, 163, 184, 0.45);
+}
+
+.actionBtn:active {
+  transform: translateY(1px);
+}
+
+.actionBtn.delete {
+  border-color: rgba(239, 68, 68, 0.28);
+  color: rgba(254, 202, 202, 0.98);
+}
+
+.actionBtn.delete:hover {
+  background: rgba(239, 68, 68, 0.10);
+  border-color: rgba(239, 68, 68, 0.55);
+}
