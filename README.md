@@ -1,4 +1,8 @@
-# ✈️ AA Ops — Baggage Tracker
+# ✈️ Airline Ops — Baggage Tracker
+
+**Role Context:**  
+Ramp Agent — CLT  
+Shift: PM Ops
 
 A full-stack internal operations tool built to simulate how airline ramp agents track and manage passenger baggage in real time.
 
@@ -34,11 +38,22 @@ A single lost bag creates:
 • Manual labor  
 • Financial loss
 
-This tool models how modern airline IT systems track baggage from **check-in → aircraft → arrival → delivery**.
+This tool models how modern airline IT systems track baggage from:
+
+**Check-in → Aircraft Load → In-Transit → Arrival → Delivery**
+
+The same lifecycle used by major airline operations systems.
 
 It demonstrates how software can directly support real-world logistics operations.
 
 ---
+
+## 🧩 System Architecture
+
+React Frontend  
+→ Axios API Client  
+→ Node + Express REST API  
+→ MongoDB (Atlas)
 
 ## 🛠️ Tech Stack
 
