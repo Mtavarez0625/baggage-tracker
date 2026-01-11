@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import React from "react";
 
-const API = "http://localhost:5050/api/bags";
+const API = "https://baggage-tracker-backend.onrender.com/api/bags";
 
 export default function App() {
   const [error, setError] = useState("");
