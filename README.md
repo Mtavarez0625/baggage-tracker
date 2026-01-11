@@ -1,10 +1,23 @@
 # ✈️ Airline Ops — Baggage Tracker
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-blue)](https://baggage-tracker.vercel.app)
+[![Backend API](https://img.shields.io/badge/Backend-Render-purple)](https://baggage-tracker-backend.onrender.com)
+
 **Role Context:**  
 Ramp Agent — CLT  
 Shift: PM Ops
 
 A full-stack internal operations tool built to simulate how airline ramp agents track and manage passenger baggage in real time.
+
+## 🔗 Live Demo
+
+https://baggage-tracker.vercel.app
+
+This is a fully deployed production build backed by a live MongoDB Atlas database and Render API.
+
+## 🧠 Live Backend API
+
+https://baggage-tracker-backend.onrender.com
 
 Built with **React, Node.js, Express, and MongoDB**.
 
